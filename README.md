@@ -4,7 +4,7 @@ A plugin that will insert a random image from a specified set and resize it to f
 
 ## Requirements
 
-The plugin requires jQuery to be included in the page, and also the [http://imagesloaded.desandro.com](imagesloaded) plugin from David Desandro. A copy of the imagesloaded plugin is included with this distribution, or you can use the bundled `jquery.imageill-combined.min.js` file which already includes the plugin if you don't want to include it separately.
+The plugin requires jQuery to be included in the page, and also the [http://imagesloaded.desandro.com](imagesloaded) plugin from David Desandro. A copy of the imagesloaded plugin is included with this distribution, or you can use the bundled `jquery.imageill-combined.min.js` file which already incorporates the plugin if you don't want to include it separately.
 
 ## Options
  
@@ -34,3 +34,8 @@ The plugin requires jQuery to be included in the page, and also the [http://imag
 			"img/image3.jpg"
 		]
 	});
+
+## To-do
+
+- TODO: Check for image load status, and if an error then select another from the array. Test with bad references to local images and also with internet disabled for web-based images.
+- CONSIDER: Add options for loader animations and/or colouring.
