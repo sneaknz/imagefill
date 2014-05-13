@@ -1,0 +1,7 @@
+# To-do list
+
+- Check for image load, and if error then select another from the array. Test with bad references to local images and also with internet disabled for web-based images.
+
+# Consideration
+
+- Add options for loader animations and/or colouring?

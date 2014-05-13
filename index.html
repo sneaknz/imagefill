@@ -18,39 +18,40 @@
 	<script>
 		$(function(){
 		
-			$(".block").imagefill({
+			$(".test-1").imagefill({
 				images: [
 					"http://farm6.staticflickr.com/5206/5352726192_aa9bd63ebb_b.jpg",
-					"img/image1-960x320.jpg",
-					"img/image2-960x320.jpg",
+					"https://farm5.staticflickr.com/4124/5200254585_478e855699_b.jpg",
 					"img/forrest-1600x800.jpg",
 					"img/water-1600x800.jpg"
 				]
 			});
 
+			$(".test-2").imagefill({
+				images: [
+					"http://farm6.staticflickr.com/5206/5352726192_aa9bd63ebb_b.jpg",
+					"https://farm5.staticflickr.com/4124/5200254585_478e855699_b.jpg",
+					"img/forrest-1600x800.jpg",
+					"img/water-1600x800.jpg"
+				],
+				loader: false
+			});
+
 		});
 	</script>
 	
-	<style type="text/css" media="screen">
-		/* For test page */
-		.block {
-			height: 400px;
-			margin: 50px;
-			background: #eee;
-		}
-		
-		.test-2 {
-			max-width: 400px;
-			margin: 50px auto;
-		}
-	</style>
-	
 </head>
 <body>
-
-	<div class="block"></div>
 	
-	<div class="block test-2"></div>
+	<article>
+	
+		<p>Basic implementation, with no options set other than images:</p>
+		<div class="block test-1"></div>
+	
+		<p>Smaller container, with no loader animation:</p>
+		<div class="block test-2"></div>
+	
+	</article>
 
 </body>
 </html>

@@ -1,12 +1,16 @@
-@import "core/mixins";
-
+// Layout
 .imagefill-parent {
 	position: relative;
 	
 	&.show-imagefill {
 		.imagefill-img {
-			.transition(opacity 0.2s);
 			opacity: 1;
+
+		    -webkit-transition: opacity 0.2s;
+		       -moz-transition: opacity 0.2s;
+		        -ms-transition: opacity 0.2s;
+		         -o-transition: opacity 0.2s;
+		            transition: opacity 0.2s;
 		}
 	}
 }
@@ -26,6 +30,9 @@
 	z-index: 0;
 }
 
+
+/* Default loader animation, taken from http://tobiasahlin.com/spinkit/
+-----------------------------------------------------------------------*/
 .imagefill-loader {
 	position: absolute;
 	left: 50%;
@@ -38,7 +45,7 @@
 		width: 18px;
 		height: 18px;
 		margin: 0 3px;
-		background-color: rgba(0,0,0,0.35);
+		background-color: rgba(0,0,0,0.35); /* Change colour of loader here */
 
 		border-radius: 100%;
 		display: inline-block;

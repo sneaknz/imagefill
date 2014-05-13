@@ -2,12 +2,12 @@
   position: relative;
 }
 .imagefill-parent.show-imagefill .imagefill-img {
+  opacity: 1;
   -webkit-transition: opacity 0.2s;
   -moz-transition: opacity 0.2s;
   -ms-transition: opacity 0.2s;
   -o-transition: opacity 0.2s;
   transition: opacity 0.2s;
-  opacity: 1;
 }
 .imagefill-wrapper {
   overflow: hidden;
@@ -22,6 +22,8 @@
   position: absolute;
   z-index: 0;
 }
+/* Default loader animation, taken from http://tobiasahlin.com/spinkit/
+-----------------------------------------------------------------------*/
 .imagefill-loader {
   position: absolute;
   left: 50%;
@@ -35,6 +37,7 @@
   height: 18px;
   margin: 0 3px;
   background-color: rgba(0, 0, 0, 0.35);
+  /* Change colour of loader here */
   border-radius: 100%;
   display: inline-block;
   -webkit-animation: bouncedelay 1.4s infinite ease-in-out;

@@ -1,6 +1,7 @@
 /*!
  * Imagefill
  * Mike Harding (@sneak)
+ * v1.0.0
  * 
  * Plugin to resize an image to fill its parent element.
  * This also includes a check for once the image is loaded, and 
@@ -49,7 +50,7 @@
 					
 					var $i = $img.children('img');
 					
-					$.fn.fullscreenr({
+					$.fn.fill({
 						width: $i.width(),
 						height: $i.height(),
 						img: $i,
@@ -74,25 +75,25 @@
 })(jQuery);
 
 /** 
-	Fullscreenr
+	Fullscreen
 	Mike Harding (@sneak)
 	
-	Altered version of the Fullscreenr plugin by Jan Schneider (nanotux.com).
+	Altered version of the fill plugin by Jan Schneider (nanotux.com).
 	Edited to resize an image relative to a specified parent, if one is supplied.
 **/
 (function($){
 
-	$.fn.fullscreenr = function(options) {
-		var defaults = { width: 1280,  height: 1024, img: $('#imagefill-img'), parent: 'window' };
+	$.fn.fill = function(options) {
+		var defaults = { width: 800,  height: 600, img: $('.imagefill-img'), parent: 'window' };
 		var opts = $.extend({}, defaults, options);
 		
-		$(document).ready(function() { opts.img.fullscreenrResizer(opts); });
-		$(window).bind("resize", function() { opts.img.fullscreenrResizer(opts); });
+		$(document).ready(function() { opts.img.fillResizer(opts); });
+		$(window).bind("resize", function() { opts.img.fillResizer(opts); });
 		
 		return this;
 	};
 	
-	$.fn.fullscreenrResizer = function(options) {
+	$.fn.fillResizer = function(options) {
 		// Set bg size
 		var ratio = options.height / options.width,
 			$parent = $(options.parent),
