@@ -21,7 +21,9 @@ A plugin that will insert a random image from a specified set and resize it to f
 
 ## Usage
 
-	$("#block").imagefill({
+	<div class="block"></div>
+
+	$(".block").imagefill({
 		images: [
 			"img/image1.jpg",
 			"img/image2.jpg",
