@@ -11,7 +11,7 @@ A plugin that will insert a random image from a specified set and resize it to f
 	</tr>
 	<tr>
 		<th>loader</th>
-		<td>Whether to show the loading animation. Default is true.</td>
+		<td>Whether to show the loading animation (optional). Default is true.</td>
 	</tr>
 	<tr>
 		<th>loaderHtml</th>
