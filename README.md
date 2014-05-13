@@ -1,6 +1,6 @@
 # Imagefill plugin
 
-A plugin that will insert a random image from a specified set and resize it to fill the parent element.
+A plugin that will insert a random image from a specified set and resize it to fill the parent element. See an example at <a href="http://code.sneak.co.nz/imagefill/">http://code.sneak.co.nz/imagefill/</a>.
 
 ## Requirements
 
