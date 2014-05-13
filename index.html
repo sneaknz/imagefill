@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6 lte9 lte8 lte7 lte6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7 lte9 lte8 lte7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8 lte9 lte8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9 lte9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Imagefill plugin</title>
+
+	<link href="css/screen.css" rel="stylesheet" />
+	<script src="js/jquery-1.11.0.js"></script>
+
+	<!-- Plugin files and setup below -->
+	<link href="dist/imagefill.css" rel="stylesheet" />
+	<script src="dist/imagesloaded.js"></script>
+	<script src="dist/jquery.imagefill.js"></script>
+	<script>
+		$(function(){
+		
+			$(".block").imagefill({
+				images: [
+					"img/image1-960x320.jpg",
+					"img/image2-960x320.jpg",
+					"img/forrest-1600x800.jpg",
+					"img/water-1600x800.jpg"
+				],
+				width: 800,
+				height: 400
+			});
+
+		});
+	</script>
+	
+	<style type="text/css" media="screen">
+		/* For test page */
+		.block {
+			height: 400px;
+			margin: 50px;
+			background: #eee;
+		}
+		
+		.test-2 {
+			max-width: 400px;
+			margin: 50px auto;
+		}
+	</style>
+	
+</head>
+<body>
+
+	<div class="block"></div>
+	
+	<div class="block test-2"></div>
+
+</body>
+</html>
