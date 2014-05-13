@@ -7,8 +7,6 @@
  * applies a loader animation until then.
  * 
  * images		: An array of strings that are paths to images (required)
- * width		: The width of the images. All images in imageSet need to be the same size. (required)
- * height		: The height of the images. (required)
  * loader		: Whether to show the loading animation. Default is true.
  * loaderHtml	: The HTML for the 'loading' animation (optional)
  * 				  Default is '<div class="imagefill-loader"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div>'
@@ -18,9 +16,7 @@
  * 						"img/image1.jpg",
  * 						"img/image2.jpg",
  * 						"img/image3.jpg"
- * 					],
- * 					width: 800,
- * 					height: 400
+ * 					]
  * 				});
  *
  * @preserve
@@ -50,10 +46,13 @@
 				}
 
 				$this.imagesLoaded().done(function() {
+					
+					var $i = $img.children('img');
+					
 					$.fn.fullscreenr({
-						width: o.width,
-						height: o.height,
-						img: $img.children('img'),
+						width: $i.width(),
+						height: $i.height(),
+						img: $i,
 						parent: $this
 					});
 
@@ -68,8 +67,6 @@
 
 	$.fn.imagefill.defaults = {
 		images: [],
-		width: 800,
-		height: 600,
 		loader: true,
 		loaderHtml: '<div class="imagefill-loader"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div>'
 	};
