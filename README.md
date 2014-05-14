@@ -25,6 +25,19 @@ The plugin requires jQuery to be included in the page, and also the [http://imag
 
 ## Usage
 
+After including jQuery, add the necessary files for the plugin:
+
+	<link href="imagefill.css" rel="stylesheet" />
+	<script src="imagesloaded.js"></script>
+	<script src="jquery.imagefill.js"></script>
+	
+Or if you are using the combined script that includes the `imagesloaded` plugin:
+
+	<link href="imagefill.css" rel="stylesheet" />
+	<script src="jquery.imagefill-combined.min.js"></script>
+	
+To use the plugin simply call it against the element you wish to insert an image into:
+
 	<div class="block"></div>
 
 	$(".block").imagefill({
