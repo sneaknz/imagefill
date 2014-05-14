@@ -4,7 +4,7 @@ A plugin that will insert a random image from a specified set and resize it to f
 
 ## Requirements
 
-The plugin requires jQuery to be included in the page, and also the (http://imagesloaded.desandro.com)[imagesloaded] plugin from David Desandro. A copy of the imagesloaded plugin is included with this distribution, or you can use the bundled `jquery.imagefill-combined.min.js` file which already incorporates the plugin if you don't want to include it separately.
+The plugin requires jQuery to be included in the page, and also the [imagesloaded](http://imagesloaded.desandro.com) plugin from David Desandro. A copy of the imagesloaded plugin is included with this distribution, or you can use the bundled `jquery.imagefill-combined.min.js` file which already incorporates the plugin if you don't want to include it separately.
 
 ## Options
  
