@@ -15,7 +15,7 @@ article {
 
 h2 {
 	text-align: center;
-	margin: 40px 0 20px;
+	margin: 60px 0 20px;
 }
 
 p {
@@ -25,7 +25,7 @@ p {
 
 .block {
 	height: 400px;
-	margin: 0 auto 50px;
+	margin: 0 auto 20px;
 	background: #eee;
 	overflow: hidden;
 	
