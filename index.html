@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6 lte9 lte8 lte7 lte6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7 lte9 lte8 lte7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8 lte9 lte8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9 lte9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Imagefill plugin</title>
+
+	<link href="css/screen.css" rel="stylesheet" />
+	<script src="js/jquery-1.11.0.js"></script>
+
+	<!-- Plugin files and setup below -->
+	<link href="dist/imagefill.css" rel="stylesheet" />
+	<script src="dist/imagesloaded.js"></script>
+	<script src="dist/jquery.imagefill.js"></script>
+	<script>
+		$(function(){
+		
+			$(".test-1").imagefill({
+				images: [
+					"http://farm6.staticflickr.com/5206/5352726192_aa9bd63ebb_b.jpg",
+					"https://farm5.staticflickr.com/4124/5200254585_478e855699_b.jpg",
+					"img/forrest-1600x800.jpg",
+					"img/water-1600x800.jpg"
+				]
+			});
+
+			$(".test-2").imagefill({
+				images: [
+					"http://farm6.staticflickr.com/5206/5352726192_aa9bd63ebb_b.jpg",
+					"https://farm5.staticflickr.com/4124/5200254585_478e855699_b.jpg",
+					"img/forrest-1600x800.jpg",
+					"img/water-1600x800.jpg"
+				],
+				loader: false
+			});
+
+			$(".test-3").imagefill({
+				images: ["http://farm6.staticflickr.com/5206/5352726192_aa9bd63ebb_b.jpg"]
+			});
+
+			$(".test-4").imagefill({
+				images: [
+					"http://farm6.staticflickr.com/5206/5352726192_aa9bd63ebb_b.jpg",
+					"https://farm5.staticflickr.com/4124/5200254585_478e855699_b.jpg"
+				],
+				loaderHtml: '<div class="pacman"></div>'
+			});
+
+		});
+	</script>
+	
+</head>
+<body>
+	
+	<article>
+		<p><a href="https://github.com/sneaknz/imagefill">View on Github</a> | <a href="https://github.com/sneaknz/imagefill/archive/master.zip">Download latest version</a></p>
+
+		<h2>Basic implementation, with only images supplied:</h2>
+
+<pre><code>$(".test-1").imagefill({
+	images: [
+		"http://farm6.staticflickr.com/5206/5352726192_aa9bd63ebb_b.jpg",
+		"https://farm5.staticflickr.com/4124/5200254585_478e855699_b.jpg",
+		"img/forrest-1600x800.jpg",
+		"img/water-1600x800.jpg"
+	]
+});</code></pre>
+
+		<div class="block test-1"></div>
+	
+		<h2>Smaller container, with no loader animation:</h2>
+		
+<pre><code>$(".test-2").imagefill({
+	images: [
+		"http://farm6.staticflickr.com/5206/5352726192_aa9bd63ebb_b.jpg",
+		"https://farm5.staticflickr.com/4124/5200254585_478e855699_b.jpg",
+		"img/forrest-1600x800.jpg",
+		"img/water-1600x800.jpg"
+	],
+	loader: false
+});</code></pre>
+		
+		<div class="block test-2"></div>
+		
+		<h2>Single image</h2>
+
+<pre><code>$(".test-3").imagefill({
+	images: ["http://farm6.staticflickr.com/5206/5352726192_aa9bd63ebb_b.jpg"]
+});</code></pre>
+
+		<div class="block test-3"></div>
+	
+		<h2>Custom loading animation</h2>
+
+<pre><code>$(".test-4").imagefill({
+	images: [
+		"http://farm6.staticflickr.com/5206/5352726192_aa9bd63ebb_b.jpg",
+		"https://farm5.staticflickr.com/4124/5200254585_478e855699_b.jpg"
+	],
+	loaderHtml: '&lt;div class="pacman">&lt;/div>'
+});</code></pre>
+
+		<div class="block test-4"></div>
+	
+	</article>
+
+</body>
+</html>

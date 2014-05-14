@@ -21,6 +21,7 @@
   opacity: 0;
   position: absolute;
   z-index: 0;
+  display: block;
 }
 /* Default loader animation, taken from http://tobiasahlin.com/spinkit/
 -----------------------------------------------------------------------*/

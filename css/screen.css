@@ -1,4 +1,4 @@
-/* Layout */
+/* Layout styles for example page */
 body {
 	font-family: sans-serif;
 	color: #444;
@@ -13,6 +13,11 @@ article {
 	padding: 50px;
 }
 
+h2 {
+	text-align: center;
+	margin: 40px 0 20px;
+}
+
 p {
 	margin: 0 0 20px;
 	text-align: center;
@@ -20,11 +25,63 @@ p {
 
 .block {
 	height: 400px;
-	margin: 0 0 50px;
+	margin: 0 auto 50px;
 	background: #eee;
+	overflow: hidden;
+	
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	        border-radius: 3px;
+			
+	-webkit-box-shadow: inset 0px 0px 1px #666;
+	   -moz-box-shadow: inset 0px 0px 1px #666;
+	        box-shadow: inset 0px 0px 1px #666;
 }
 
 .test-2 {
-	max-width: 400px;
-	margin: 0 auto 50px auto;
+	max-width: 600px;
+}
+
+.test-3,
+.test-4 {
+	max-width: 830px;
+}
+
+.pacman {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 24px;
+	height: 24px;
+	margin: -12px 0 0 -12px;
+	background: url("../img/pacman.gif") no-repeat;
+}
+
+a {
+	color: #444;
+	text-decoration: none;
+	border-bottom: 1px solid #bbb;
+}
+
+a:hover {
+	color: #222;
+	border-color: #666;
+}
+
+pre {
+	background: #eee;
+	border: 1px solid #ddd;
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	        border-radius: 3px;
+	margin: 20px auto;
+	padding: 15px;
+	font-size: 13px;
+	max-width: 800px;
+	overflow: auto;
+}
+
+code {
+	font-family: Consolas, Monaco, monospace;
+	font-size: 13px;
 }
