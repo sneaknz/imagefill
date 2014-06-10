@@ -97,8 +97,8 @@
 		// Set bg size
 		var ratio = options.height / options.width,
 			$parent = $(options.parent),
-			browserwidth = $parent.width(),
-			browserheight = $parent.height();
+			browserwidth = $parent.outerWidth(),
+			browserheight = $parent.outerHeight();
 
 		// Scale the image
 		if ((browserheight/browserwidth) > ratio){
