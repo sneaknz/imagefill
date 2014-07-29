@@ -21,6 +21,10 @@ The plugin requires jQuery to be included in the page, and also the [imagesloade
 		<th>loaderHtml</th>
 		<td>The HTML for the 'loading' animation (optional). Default is `'<div class="imagefill-loader"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div>'`</td>
 	</tr>
+	<tr>
+		<th>afterLoad</th>
+		<td>A callback once the image has been loaded. The value for `this` is the parent imagefill container.</td>
+	</tr>
 </table>
 
 ## Usage

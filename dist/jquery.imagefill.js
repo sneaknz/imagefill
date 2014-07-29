@@ -60,7 +60,12 @@
 					if (o.loader) {
 						$loaderHtml.remove();
 					}
+
 					$this.addClass('show-imagefill');
+					
+					if ( typeof o.afterLoad === 'function' ) {
+						o.afterLoad.call($this);
+					}
 				});
 			}
 		});
@@ -69,7 +74,8 @@
 	$.fn.imagefill.defaults = {
 		images: [],
 		loader: true,
-		loaderHtml: '<div class="imagefill-loader"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div>'
+		loaderHtml: '<div class="imagefill-loader"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div>',
+		afterLoad: null
 	};
 
 })(jQuery);
